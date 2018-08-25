@@ -8,3 +8,11 @@
 .text-teal{
     color:teal;
 }
+.my-card:hover{
+    background: teal;
+    color: white;
+}
+.my-icon:hover{
+background: teal;
+color: white;
+}
