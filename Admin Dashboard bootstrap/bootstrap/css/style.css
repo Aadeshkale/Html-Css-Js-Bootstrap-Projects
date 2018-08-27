@@ -4,3 +4,10 @@
     height: 10px;
     border-radius: 0% !important;
     cursor: pointer; }
+body{
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 18px;
+}
+.text-teal{
+    color: #00796b;
+}
