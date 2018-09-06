@@ -17,25 +17,26 @@
                 <div class="w-50 mt-3 mx-auto">
                     <form class="border p-3">
                         <div class="form-group clearfix ">
-                            <input class="form-control" type="text" placeholder="Enter ur name" required>
-                            <input class="form-control" type="email" placeholder="Enter ur Email" required>
-                            <input class="form-control" type="tel" maxlength="10" placeholder="Enter ur mobile no" required>
+                            <input id="name" class="form-control" type="text" placeholder="Enter ur name">
+                            <input id="email" class="form-control" type="email" placeholder="Enter ur Email" >
+                            <input id="mobile" class="form-control" type="tel" maxlength="10" placeholder="Enter ur mobile no" >
                             <div>
-                                <label for="gen" class="mr-4">Gender:</label>
-                                <input id="gen"  type="radio" name="gender" checked> Male
-                                <input class="ml-4" type="radio" name="gender"> Female
+                                <label for="genmale" class="mr-4">Gender:</label>
+                                <input id="genmale"  type="radio" value="male" name="gender"> Male
+                                <input id="genfemale" class="ml-4" value="female" type="radio" name="gender"> Female
                             </div>
                             <div>
                                 <label for="cou">Country:</label>
                                 <select id="cou" class="ml-5">
-                                    <option>India</option>
-                                    <option>Other</option>
+                                    <option value="">Select</option>
+                                    <option value="india">India</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                             <label for="add">Address:</label>
-                            <textarea id="add" cols="30" rows="5" required></textarea>
-                            <input type="submit" value="Submit" class="btn btn-success ">
-                            <input type="reset" value="Reset" class="btn btn-warning ">
+                            <textarea id="address" cols="30" rows="5" ></textarea>
+                            <input type="button" id="btn" value="Submit" class="btn btn-success">
+                            <input type="reset" id="reset" value="Reset"  class="btn btn-warning ">
                             <p class="text-danger font-weight-bold">Note:-Use Developer option -> Application To see local stored data</p>
                         </div>
                     </form>
@@ -47,7 +48,7 @@
             <h1>All Rights Reserved</h1>
             <h2>Copy&copy;rights 2k18</h2>
             <p class="mb-0">Made by <i class="fa fa-user-circle"></i>
-                <a href="https://github.com/Aadeshkale" class="text-dark">Aadesh</a>
+                <a href="https://github.com/Aadeshkale" target="_blank" class="text-white">Aadesh</a>
             </p>
     </footer>
 
@@ -62,5 +63,6 @@
     <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap/js/mdb.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="local.js"></script>
 </body>
 </html>
